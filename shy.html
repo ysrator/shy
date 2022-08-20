@@ -24,9 +24,20 @@
             if (!results[2]) return '';
             return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
-        if (getParameterByURL("code") = null) {
-            console.error("Select code!");
-            const result = Module.ccall("cmd", null, null, null);
+        if (getParameterByURL("code") = null) Module.ccall("cmd", null, null, null);
+        else {
+            if (getParameterByURL("src") = null) {
+                Module.ccall("commands", null, null, getParameterByURL("code"));
+            }
+            else {
+                const xhr = new XMLHttpRequest();
+                xhr.onabort = console.error("Abort!");
+                xhr.ontimeout = console.error("Script could not be imported");
+                xhr.onerror = console.error("Error!");
+                xhr.open("GET", getParameterByURL("src"));
+                xhr.send();
+                Module.ccall("commands", null, null, xhr.response);
+            }
         }
     </script>
     <script></script>
