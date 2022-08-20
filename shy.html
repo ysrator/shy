@@ -32,11 +32,11 @@
             else {
                 const xhr = new XMLHttpRequest();
                 xhr.onabort = console.error("Abort!");
-                xhr.ontimeout = console.error("Script could not be imported");
+                xhr.ontimeout = console.error("Script could not be imported!");
                 xhr.onerror = console.error("Error!");
                 xhr.open("GET", getParameterByURL("src"));
                 xhr.send();
-                Module.ccall("commands", null, null, xhr.response);
+                Module.ccall("commands", String || Number, String || Number, xhr.response);
             }
         }
     </script>

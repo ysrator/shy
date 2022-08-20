@@ -15,3 +15,7 @@ int main() {
 EXTERN EMSCRİPTEN_KEEPALİVE void cmd(int argc, char ** argv) {
     printf("Coming soon/n");
 }
+
+EXTERN EMSCRİPTE_KEEPALİVE void commands(int argc, char ** argv) {
+    printf("Coming soon/n");
+}
