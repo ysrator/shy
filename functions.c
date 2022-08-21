@@ -18,6 +18,8 @@ EXTERN EMSCRİPTEN_KEEPALİVE void cmd(int argc, char ** argv) {
 
 EXTERN EMSCRİPTEN_KEEPALİVE void commands(int argc, char ** argv) {
     EM_ASM({ 
-        
+        /*
+            Burayı C ile sağlanmayan bölümlerde JavaScript'den fonksiyon çağırmak için kullanıcam.
+        */
      });
 }
