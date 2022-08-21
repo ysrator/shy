@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 #include <emscripten/emscripten.h>
 
 int main() {
@@ -16,6 +16,6 @@ EXTERN EMSCRİPTEN_KEEPALİVE void cmd(int argc, char ** argv) {
     printf("Coming soon/n");
 }
 
-EXTERN EMSCRİPTE_KEEPALİVE void commands(int argc, char ** argv) {
+EXTERN EMSCRİPTEN_KEEPALİVE void commands(int argc, char ** argv) {
     printf("Coming soon/n");
 }
