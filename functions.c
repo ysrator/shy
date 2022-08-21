@@ -17,5 +17,7 @@ EXTERN EMSCRİPTEN_KEEPALİVE void cmd(int argc, char ** argv) {
 }
 
 EXTERN EMSCRİPTEN_KEEPALİVE void commands(int argc, char ** argv) {
-    printf("Coming soon/n");
+    EM_ASM({ 
+        
+     });
 }
